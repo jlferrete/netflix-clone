@@ -44,3 +44,22 @@ function validarInput(e) {
         }
     }
 }
+
+//Mostrar y ocultar password
+
+const mostrarPasswordBtn = document.querySelector('form .campo span');
+
+mostrarPasswordBtn.addEventListener('click', e => {
+    const passwordInput = document.querySelector('#password');
+
+    if (e.target.classList.contains('mostrar')) {
+        e.target.classList.remove('mostrar');
+        e.target.textContent = 'Ocultar';
+        passwordInput.type = 'text';
+
+    } else {
+        e.target.classList.add('mostrar');
+        e.target.textContent = 'Mostrar';
+        passwordInput.type = 'password';
+    }
+})

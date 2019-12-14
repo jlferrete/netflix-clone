@@ -90,6 +90,17 @@ form .campo {
   margin-bottom: 0.8rem;
 }
 
+form .campo span {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  text-transform: uppercase;
+}
+
+form .campo span:hover {
+  cursor: pointer;
+}
+
 form .campo label {
   position: absolute;
   top: 1.1rem;

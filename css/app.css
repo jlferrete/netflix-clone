@@ -57,7 +57,7 @@ a:hover {
 @media (min-width: 768px) {
   .formulario-login {
     background-color: rgba(0, 0, 0, 0.85);
-    max-width: 450px;
+    max-width: 420px;
     padding: 2rem 4rem;
     margin: 1rem auto 4rem auto;
   }
@@ -141,4 +141,25 @@ form .acciones label,
 form .acciones a {
   font-size: .8rem;
   text-decoration: none;
+}
+
+.contenido-inferior {
+  padding-bottom: 2rem;
+}
+
+.contenido-inferior a {
+  font-size: .8rem;
+}
+
+.contenido-inferior .nuevo-usuario {
+  font-size: 1rem;
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: flex;
+}
+
+.contenido-inferior .nuevo-usuario a {
+  font-size: 1rem;
+  color: #FFFFFF;
+  margin-left: 0.5rem;
 }

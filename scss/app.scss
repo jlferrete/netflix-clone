@@ -44,3 +44,21 @@ a {
         margin-left: 2%;
     }
 }
+
+.formulario-login {
+    @include tablet {
+        background-color: rgba(0, 0, 0, 0.85);
+        max-width: 450px;
+        padding: 2rem 4rem;
+        margin: 1rem auto 4rem auto;
+    }
+}
+
+form {
+    legend {
+        color: $blanco;
+        font-size: 2rem;
+        margin: 2rem 0;
+        font-weight: bold;
+    }
+}

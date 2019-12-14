@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,61 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
+
 <body>
 
+    <header class="site-header">
+        <img src="img/logo.svg" alt="logotipo">
+    </header>
+
+    <main class="formulario-login contenedor">
+
+        <form action="#">
+            <legend>Inicia sesión</legend>
+            <div class="campo">
+                <input type="text" name="usuario" id="usuario">
+                <label for="usuario">Email o número de teléfono</label>
+            </div>
+            <div class="campo">
+                <input type="text" name="password" id="password">
+                <label for="password">Contraseña</label>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Iniciar sesión">
+            </div>
+            <div class="acciones">
+                <div class="recuerdame">
+                    <input type="checkbox" name="recuerdame" id="recuerdame">
+                    <label for="recuerdame">Recuérdame</label>
+                </div>
+                <div class="ayuda">
+                    <a href="#">¿Necesitas ayuda?</a>
+                </div>
+            </div>
+            <!-- acciones -->
+        </form>
+        <div class="contenido-inferior">
+            <a href="#">Iniciar sesión con Facebook</a>
+            <a href="#" class="nuevo-usuario">¿Primera vez en Devflix? <span>Suscríbete Ya!</span> </a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="contenedor">
+            <p>¿Preguntas? Llama al 01800-555-7685</p>
+            <nav class="menu-footer">
+                <a href="#">Términos de las tarjetas de regalo</a>
+                <a href="#">Términos de uso</a>
+                <a href="#">Declaración de privacidad</a>
+            </nav>
+            <select name="" id="" class="lenguaje">
+                <option value="eng">English</option>
+                <option value="esp">Castellano</option>
+            </select>
+        </div>
+
+    </footer>
 
 </body>
+
 </html>

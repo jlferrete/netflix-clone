@@ -79,6 +79,11 @@ form .campo {
 
 form .campo label {
   position: absolute;
+  top: 1.1rem;
+  left: 1rem;
+  font-size: 0.9rem;
+  -webkit-transition: font-size .2s ease, top .2s ease;
+  transition: font-size .2s ease, top .2s ease;
 }
 
 form .campo input {
@@ -93,4 +98,9 @@ form .campo input {
 form .campo input:focus {
   background-color: #454545;
   outline: none;
+}
+
+form .campo input:focus + label {
+  font-size: .6rem;
+  top: 0.5rem;
 }

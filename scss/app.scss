@@ -67,6 +67,10 @@ form {
         margin-bottom: 0.8rem;
         label {
             position: absolute;
+            top: 1.1rem;
+            left: 1rem;
+            font-size: 0.9rem;
+            transition: font-size .2s ease, top .2s ease;
         }
         input {
             flex: 1;
@@ -77,6 +81,10 @@ form {
             &:focus {
                 background-color: $gris3;
                 outline: none;
+                +label {
+                    font-size: .6rem;
+                    top: 0.5rem;
+                }
             }
         }
     }

@@ -69,3 +69,28 @@ form legend {
   margin: 2rem 0;
   font-weight: bold;
 }
+
+form .campo {
+  display: -webkit-box;
+  display: flex;
+  position: relative;
+  margin-bottom: 0.8rem;
+}
+
+form .campo label {
+  position: absolute;
+}
+
+form .campo input {
+  -webkit-box-flex: 1;
+  flex: 1;
+  padding: 1.3rem 1rem .7rem 1rem;
+  border: none;
+  background-color: #323232;
+  border-radius: 5px;
+}
+
+form .campo input:focus {
+  background-color: #454545;
+  outline: none;
+}

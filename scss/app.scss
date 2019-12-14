@@ -61,4 +61,23 @@ form {
         margin: 2rem 0;
         font-weight: bold;
     }
+    .campo {
+        display: flex;
+        position: relative;
+        margin-bottom: 0.8rem;
+        label {
+            position: absolute;
+        }
+        input {
+            flex: 1;
+            padding: 1.3rem 1rem .7rem 1rem;
+            border: none;
+            background-color: $gris;
+            border-radius: $radius;
+            &:focus {
+                background-color: $gris3;
+                outline: none;
+            }
+        }
+    }
 }

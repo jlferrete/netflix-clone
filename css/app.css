@@ -144,7 +144,13 @@ form .acciones a {
 }
 
 .contenido-inferior {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .contenido-inferior {
+    padding-bottom: 0px;
+  }
 }
 
 .contenido-inferior a {
@@ -162,4 +168,63 @@ form .acciones a {
   font-size: 1rem;
   color: #FFFFFF;
   margin-left: 0.5rem;
+}
+
+.site-footer {
+  border-top: 1px solid #8C8C8C;
+  padding: 2rem 0 4rem 0;
+}
+
+@media (min-width: 768px) {
+  .site-footer {
+    border-top: unset;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 1rem 0 3rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-footer .contenedor {
+    max-width: 50%;
+  }
+}
+
+.site-footer .menu-footer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-flex: wrap;
+  flex: wrap;
+}
+
+@media (min-width: 1200px) {
+  .site-footer .menu-footer {
+    max-width: 60%;
+  }
+}
+
+.site-footer .menu-footer a {
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  font-size: .8rem;
+  margin-right: 2rem;
+  padding: 0.5rem 0;
+}
+
+.site-footer .menu-footer a:last-of-type {
+  margin-right: 0px;
+}
+
+.site-footer select {
+  margin-top: 2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 1rem 3rem;
+  border: 1px solid #454545;
+  border-radius: 5px;
+  font-size: .8rem;
+  background-color: #000000;
+  color: #8C8C8C;
 }

@@ -112,7 +112,10 @@ form {
 }
 
 .contenido-inferior {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    @include tablet {
+        padding-bottom: 0px;
+    }
     a {
         font-size: .8rem;
     }
@@ -125,5 +128,47 @@ form {
             color: $blanco;
             margin-left: 0.5rem;
         }
+    }
+}
+
+.site-footer {
+    border-top: 1px solid $gris2;
+    padding: 2rem 0 4rem 0;
+    @include tablet {
+        border-top: unset;
+        background-color: rgba(0, 0, 0, 0.85);
+        padding: 1rem 0 3rem 0;
+    }
+    .contenedor {
+        @include tablet {
+            max-width: 50%;
+        }
+    }
+    .menu-footer {
+        display: flex;
+        justify-content: space-between;
+        flex: wrap;
+        @include desktop {
+            max-width: 60%;
+        }
+        a {
+            flex: 0 0 auto;
+            font-size: .8rem;
+            margin-right: 2rem;
+            padding: 0.5rem 0;
+            &:last-of-type {
+                margin-right: 0px;
+            }
+        }
+    }
+    select {
+        margin-top: 2rem;
+        appearance: none;
+        padding: 1rem 3rem;
+        border: 1px solid $gris3;
+        border-radius: $radius;
+        font-size: .8rem;
+        background-color: $negro;
+        color: $gris2;
     }
 }

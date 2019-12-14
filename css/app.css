@@ -42,6 +42,19 @@ a:hover {
   margin: 0 auto;
 }
 
+.alerta {
+  color: #E87C03;
+  display: block;
+  margin-bottom: .5rem;
+  padding: .2rem;
+  font-size: .8rem;
+  text-align: center;
+}
+
+input.no-valido {
+  border-bottom: 2px solid #E87C03 !important;
+}
+
 .logotipo {
   margin-top: 1.5rem;
   max-width: 180px;
@@ -86,6 +99,11 @@ form .campo label {
   transition: font-size .2s ease, top .2s ease;
 }
 
+form .campo label.valido {
+  font-size: .6rem;
+  top: .5rem;
+}
+
 form .campo input {
   -webkit-box-flex: 1;
   flex: 1;
@@ -93,6 +111,7 @@ form .campo input {
   border: none;
   background-color: #323232;
   border-radius: 5px;
+  color: #FFFFFF;
 }
 
 form .campo input:focus {

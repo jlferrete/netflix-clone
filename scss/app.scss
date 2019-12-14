@@ -88,4 +88,25 @@ form {
             }
         }
     }
+    .submit {
+        display: flex;
+        margin-top: 2rem;
+        input[type="submit"] {
+            @include boton($primario, $blanco);
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .acciones {
+        display: flex;
+        justify-content: space-between;
+        padding: .5rem 0;
+        margin: .5rem 0 8rem 0;
+        label,
+        a {
+            font-size: .8rem;
+            text-decoration: none;
+        }
+    }
 }

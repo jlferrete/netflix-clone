@@ -104,3 +104,41 @@ form .campo input:focus + label {
   font-size: .6rem;
   top: 0.5rem;
 }
+
+form .submit {
+  display: -webkit-box;
+  display: flex;
+  margin-top: 2rem;
+}
+
+form .submit input[type="submit"] {
+  background-color: #E50914;
+  color: #FFFFFF;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+
+form .submit input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+form .acciones {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: .5rem 0;
+  margin: .5rem 0 8rem 0;
+}
+
+form .acciones label,
+form .acciones a {
+  font-size: .8rem;
+  text-decoration: none;
+}
